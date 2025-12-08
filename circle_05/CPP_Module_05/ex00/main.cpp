@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:57:11 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/08 12:33:16 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/08 17:50:58 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,26 @@
 int main( void )
 {
 	Bureaucrat a;
-	Bureaucrat b("Noah", 17);
-	Bureaucrat c("Lola", 3);
+	std::cout << a << std::endl;
+	
+	Bureaucrat b("Julien", 54);
 	std::cout << b << std::endl;
+	
+	Bureaucrat c("Noah", 150);
+	std::cout << c << std::endl;
+
+	Bureaucrat d("Lola", 1);
+	std::cout << d << std::endl;
+
+	try
+	{
+		Bureaucrat e("Frederic", 151);
+		std::cout << e << std::endl;
+	}
+	catch (std::exception& exc)
+	{
+		std::cout << "Caught: " << exc.what();
+	}
+	
 	return (0);
 }
