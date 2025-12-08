@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:57:16 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/08 12:10:18 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/08 12:32:54 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ class Bureaucrat
 		void incrementGrade();
 		void decrementGrade();
 };
+
+std::ostream &operator<<(std::ostream& stream, Bureaucrat& obj);
 
 #endif
