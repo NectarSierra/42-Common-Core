@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:57:16 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/08 18:10:28 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 06:47:34 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ class Bureaucrat
 	};
 };
 
-std::ostream &operator<<(std::ostream& stream, Bureaucrat& obj);
+std::ostream& operator<<(std::ostream& stream, Bureaucrat& obj);
 
 #endif

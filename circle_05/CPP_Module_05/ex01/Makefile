@@ -6,7 +6,7 @@
 #    By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/08 10:58:15 by nsaillez          #+#    #+#              #
-#    Updated: 2025/12/08 10:58:46 by nsaillez         ###   ########.fr        #
+#    Updated: 2025/12/09 06:56:08 by nsaillez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ STD_FLAG = -std=c++98
 OUT_NAME = output
 
 SRCS     = main.cpp \
-		   Bureaucrat.cpp
+		   Bureaucrat.cpp \
+		   Form.cpp
 
 OBJ_DIR  = objs
 OBJS     = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
