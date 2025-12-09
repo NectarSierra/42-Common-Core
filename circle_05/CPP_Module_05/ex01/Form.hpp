@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 06:41:41 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 07:04:41 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 07:29:19 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,10 @@ class Form
 	private:
 		Form& operator=(Form& obj);
 	public:
-		
+		std::string getName(void);
+		bool getSignature(void);
+		int getGradRequiredToSign(void);
+		int getGradeRequiredToExecute(void);
 };
 
 std::iostream& operator<<(std::iostream& stream, Form& obj);

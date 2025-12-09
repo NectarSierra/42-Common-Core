@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 06:52:15 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 07:09:40 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 07:30:09 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,14 @@ Form::Form(std::string r_name, int r_to_sign, int r_to_execute)
 	, required_to_execute(r_to_execute)
 {
 	std::cout << "Form parameterized constructor called!" << std::endl;
+}
+
+std::string Form::getName(void)
+{
+	return (this->name);
+}
+
+std::iostream& operator<<(std::iostream& stream, Form& obj)
+{
+	stream << obj.getName();
 }
