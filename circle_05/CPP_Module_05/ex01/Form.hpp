@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 06:41:41 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 07:29:19 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 07:44:09 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Form
 	public:
 		Form(void);
 		Form(std::string r_name, int r_to_sign, int r_to_execute);
-		Form(Form& obj);
+		Form(const Form& obj);
 		~Form();
 	private:
 		Form& operator=(Form& obj);
@@ -34,6 +34,18 @@ class Form
 		bool getSignature(void);
 		int getGradRequiredToSign(void);
 		int getGradeRequiredToExecute(void);
+
+	class GradeTooHighException : public std::exception
+	{
+		private:
+			const char* what() const throw();
+	};
+
+	class GradeTooLowException : public std::exception
+	{
+		private:
+			const char* what() const throw();
+	};
 };
 
 std::iostream& operator<<(std::iostream& stream, Form& obj);

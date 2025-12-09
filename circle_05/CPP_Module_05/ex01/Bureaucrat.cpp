@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:57:06 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 07:10:16 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 07:39:43 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ std::ostream& operator<<(std::ostream& stream, Bureaucrat& obj)
 
 const char* Bureaucrat::GradeTooHighException::what() const throw()
 {
-	
 	return ("The current grade is too high\n");
 }
 

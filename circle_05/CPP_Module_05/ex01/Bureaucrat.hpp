@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 11:57:16 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 06:47:34 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 07:38:15 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@ class Bureaucrat
 
 	class GradeTooHighException : public std::exception
 	{
-		public:
+		private:
 			const char* what() const throw();
 	};
 
 	class GradeTooLowException : public std::exception
 	{
-		public:
+		private:
 			const char* what() const throw();
 	};
 };
