@@ -78,7 +78,7 @@ void AForm::beSigned(Bureaucrat& obj)
 
 std::ostream& operator<<(std::ostream& stream, AForm& obj)
 {
-	stream << obj.getName() << ", AForm require grade of "
+	stream << obj.getName() << ", Form require grade of "
 	<< obj.getGradeRequiredToSign() << " to be signed and grade of "
 	<< obj.getGradeRequiredToExecute() << " to be executed";
 	return (stream);

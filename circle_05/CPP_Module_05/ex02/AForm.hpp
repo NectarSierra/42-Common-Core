@@ -29,15 +29,15 @@ class AForm
 		AForm(void);
 		AForm(std::string r_name, int r_to_sign, int r_to_execute);
 		AForm(const AForm& obj);
-		~AForm();
+		virtual ~AForm();
 	private:
 		AForm& operator=(AForm& obj);
 	public:
-		virtual std::string getName(void) const = 0;
-		virtual bool getSignature(void) const = 0;
-		virtual int getGradeRequiredToSign(void) const = 0;
-		virtual int getGradeRequiredToExecute(void) const = 0;
-		virtual void beSigned(Bureaucrat& obj) = 0;
+		virtual std::string getName(void) const;
+		virtual bool getSignature(void) const;
+		virtual int getGradeRequiredToSign(void) const;
+		virtual int getGradeRequiredToExecute(void) const;
+		virtual void beSigned(Bureaucrat& obj);
 
 	class GradeTooHighException : public std::exception
 	{

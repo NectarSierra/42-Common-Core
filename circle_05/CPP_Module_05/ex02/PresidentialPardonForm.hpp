@@ -6,7 +6,7 @@
 /*   By: nsaillez <nsaillez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 10:35:04 by nsaillez          #+#    #+#             */
-/*   Updated: 2025/12/09 10:50:05 by nsaillez         ###   ########.fr       */
+/*   Updated: 2025/12/09 12:41:00 by nsaillez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,14 @@
 
 #include "AForm.hpp"
 
-class PresidentialPadonForm : public AForm
+class PresidentialPardonForm : public AForm
 {
 	public:
-		PresidentialPadonForm(void);
-		PresidentialPadonForm(std::string target);
-		PresidentialPadonForm(const PresidentialPadonForm& obj);
-		~PresidentialPadonForm();
+		PresidentialPardonForm(std::string target);
+		PresidentialPardonForm(const PresidentialPardonForm& obj);
+		~PresidentialPardonForm();
 	private:
-		PresidentialPadonForm& operator=(const PresidentialPadonForm& obj);
+		PresidentialPardonForm& operator=(const PresidentialPardonForm& obj);
 };
 
 #endif
